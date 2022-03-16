@@ -1,0 +1,175 @@
+
+/* Mobie & Tablet */
+@media screen and (max-width: 63.9375em) {
+    .btn {
+        height: 50px;
+        font-size: 18px;
+
+    }
+
+    .contact-section input {
+        padding: 12px;
+    }
+
+    .contact-section .send-input {
+        line-height: 1.290;
+        font-size: 18px;
+    }
+
+    #input-name,
+    #input-mail,
+    #input-text {
+        font-size: 18px;
+    }
+
+    .footer-icon {
+        font-size: 32px;
+    }
+
+    #footer a {
+        padding: 0px 4px;
+    }
+
+    #footer h4 a {
+        padding: 12px 0px;
+        display: inline-block;
+    }
+
+    .contact-col p {
+        line-height: 2;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .list__button {
+        display: none;
+    }
+
+    #nav .subnav a {
+        padding: 15px 12px;
+    }
+
+}
+
+
+/* Mobie: width < 740px */
+@media screen and (max-width: 46.1875em) {
+
+    .s-full-width {
+        width: 100%;
+    }
+
+    .col-one {
+        width: 100%;
+    }
+
+    .mt-16-mobie {
+        margin-top: 16px !important;
+    }
+
+    .mt-32-mobie {
+        margin-top: 32px !important;
+    }
+
+    /* Nav-mobie */
+    #header {
+        overflow: hidden;
+    }
+
+    .nav__list {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav > li > a {
+        display: block;
+        padding: 1px 24px;
+    }
+
+    
+    #nav .subnav {
+        background-color: #000;
+        position: initial;
+        width: 100%;
+        
+    }
+    
+    #nav .subnav > li:hover > a {
+        color: #ccc;
+    }
+    
+    #nav .subnav li {
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        background-color: #000;
+        padding: 15px 40px;
+    }
+
+    
+
+    #header .search-button {
+        display: none; 
+    }
+    
+    .list__button {
+        display: block;
+    }
+
+    /* Slider */
+
+    .chicago,
+    .thank-you {
+        display: none;
+    }
+
+    /* About-section Mobie*/
+    .content-section {
+
+    }
+
+    #content .member {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+
+    #content .member img {
+        width: 60%;
+    }
+
+
+    /* Tour */
+    .city-tour {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middle-col-tour {
+        margin: 16px 0px;
+    }
+
+    /* Contact */
+    .contact-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-email-org {
+        margin-top: 8px;
+    }
+
+
+
+}

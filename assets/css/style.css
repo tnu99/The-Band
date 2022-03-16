@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/* Common */
+.float-right {
+    float: right;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
+}
+
+.row {
+    margin: 0px -8px;
+}
+
+.col {
+    float: left;
+    padding: 0px 8px;
+    background-color: #fff;
+    background-clip: content-box;
+}
+
+.col-one-pc {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333333%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.white-color {
+    color: #fff !important;
+}
+
+.btn {
+    width: 107.7px;
+    height: 38.5px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    cursor:pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Main */
+#main {
+
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+.nav__list {
+    display: inline-block;
+}
+
+#nav li {
+    list-style-type: none;
+}
+
+#header #nav .arrow-down {
+    font-size: small;
+    font-weight: bolder;
+}
+
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {text-decoration: none;}
+
+#nav > li > a {
+    display: inline-block;
+    line-height: 46px;
+    color: #fff;
+    padding: 0px 24px;
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a {
+    background-color: #ccc;
+    color:#000;
+}
+
+#nav li:hover .subnav {display: block;}
+
+#nav .subnav {
+    display: none;
+    width: 160px;
+    background-color: #fff;
+    position: absolute;
+    top:100%;
+    left:0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) ;
+}
+
+#nav .subnav li {
+    
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc;
+}
+
+#nav .subnav a {
+    color: #000;
+    display: block;
+    padding: 10px 16px;
+}
+
+#header .list__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .search-button, .list__button {
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0px 23px;
+    font-weight: bolder;
+    cursor: pointer;
+    height: 46px;
+}
+
+.list__button {
+    display: none;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+}
+
+#header .list__button:hover {
+    background-color: #ccc;
+}
+
+/* Slider */
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/slider1.jpg') top center / cover no-repeat; 
+}
+
+#slider .text-decoration {
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+
+}
+
+#slider .text-decoration p {
+    padding-top: 25px;
+}
+
+#slider .text-decoration h2,p {
+    font-weight: 200;
+}
+
+/* Content */
+
+#content {
+    
+}
+
+/* About section */
+
+
+.content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+
+}
+
+
+
+#content .section-heading {
+    padding-top: 74px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+#content .section-sub-heading {
+    margin-top: 25px;
+    font-style: italic;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 15px;
+
+}
+
+#content .about {
+    margin-top: 25px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#content .member {
+    padding: 30px 0px 112px;
+}
+
+#content .member p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#content .member img {
+    border-radius: 4px;
+    width: 153.587px;
+}
+
+/* Tour-section */
+
+/* Tour-section-content */
+.tour-section {
+    background-color: #000;
+}
+
+.tour-section .book-tickets {
+    background-color: #fff;
+    margin-top: 36px;
+    list-style-type: none;
+}
+
+.tour-section li {
+    padding: 11px 20px;
+    font-size: 15px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+
+.tour-section .sold-out {
+    background-color: #f44336;
+    color: white;
+    padding: 4px 6px;
+    margin-left: 12px;
+}
+
+.tour-section .quantity {
+    float: right;
+    background-color: #000;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 25px;
+    line-height: 17.6px;
+    margin-top: -2px;
+}
+
+/* Tour-section City Tour */
+
+.tour-section .city-tour {
+    margin-top: 16px;
+    font-size: 15px;
+    padding-bottom: 112px;
+}
+
+.tour-section .city {
+    background-color: #fff;
+}
+
+.tour-section .city-tour img {
+    width: 100%;
+}
+
+.tour-section .city-tour img:hover {
+    opacity: 0.60;
+}
+
+.tour-section .city-tour .tour-image {
+    background-color: #000;
+}
+
+.descr-tour {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.tour-section .city-tour h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tour-section .city-tour p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.tour-section .city-tour .day {
+    opacity: 0.6;
+}
+
+
+/* Contact-Section */
+
+.contact-section {
+    padding-bottom: 96px;
+}
+
+.contact-col {
+    margin-top: 47px; 
+    margin-bottom: 16px;
+    font-size: 18px;
+    
+}
+
+.contact-col p {
+    line-height: 1.5;
+}
+
+.contact-col a {
+    color: #1e05ee;
+    opacity: 0.8;
+}
+
+.contact-col a:hover {
+    color: #1e05ee;
+    opacity: 1;
+}
+
+.contact-section .icon {
+    display: inline-block;
+    width: 30px;
+}
+.contact-section input,button {
+    display: block;
+}
+
+.contact-section input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    line-height: 1.689;
+}
+
+#input-name, #input-mail {
+    width: 100%;
+}
+
+.contact-section #input-text {
+    width: 100%;
+}
+
+.contact-section .contact-submit:hover {
+    opacity: 0.7;
+}
+
+/* Map */
+.image-section img {
+    filter: grayscale(50%);
+    width: 100%;
+}
+
+/* Footer */
+#footer {
+    padding: 64px 0px;
+    width: 100%;
+    text-align: center;
+    color:#757575;
+    font-size: 22px;
+
+}
+
+#footer h4 {
+    font-size: 15px;
+    padding: 15px 0px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+#footer i:hover {
+    opacity: 0.6;
+}
+
+#footer a {
+    color: #757575;
+    text-decoration: none;
+}
+
+#footer h4 a {
+    text-decoration: underline;
+}
+
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 455.3px;
+    position: relative;
+    animation: modalFadeIn linear 0.3s;
+}
+
+
+.modal-header {
+    background-color: #009688;
+    height: 129px;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 18px;
+    color: white;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin: 0px 20px;
+}
+
+.modal-body label,input{
+    display: block;
+}
+
+.modal-body label{
+    font-size: 15px;
+    margin-top: 22px;
+}
+
+.modal-body input {
+    margin-top: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 11px;
+}
+
+#modal-pay {
+    background-color: #009688;
+    margin: 16px 0px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 15px 0px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#modal-pay:hover {
+    opacity: 0.9;
+}
+
+.footer-modal {
+    margin: 0px 20px;
+}
+
+.footer-modal .modal-help {
+    font-size: 15px;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+
+}
+
+.footer-modal a {
+    color: #2196F3
+}
+
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
